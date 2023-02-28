@@ -1,0 +1,10 @@
+header {
+  display: flex;
+  height: 520px;
+  background-color: #89dfc0;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  background-image: url("https://www.transparenttextures.com/patterns/climpek.png");;
+}
