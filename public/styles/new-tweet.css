@@ -1,0 +1,39 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 10px;
+  font-weight: 600;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee, cursive;
+  padding-top: 20px;
+}
+
+form button {
+  background-color: #4056A1;
+  font-size: 20px;
+  color: #ffffff;
+  border: 0px;
+  padding: 6px 10px;
+}
+
+form textarea {
+  border-width: 4px;
+  background-color: #f4f1ec;
+  border-bottom: ;
+  border-top: 4px;
+  border-left: 4px;
+  border-right: 4px;
+  resize: none;
+}
