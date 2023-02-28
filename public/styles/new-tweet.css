@@ -29,11 +29,8 @@ form button {
 }
 
 form textarea {
-  border-width: 4px;
   background-color: #f4f1ec;
-  border-bottom: ;
-  border-top: 4px;
-  border-left: 4px;
-  border-right: 4px;
+  border: none;
+  border-bottom: 3px solid black;
   resize: none;
 }
