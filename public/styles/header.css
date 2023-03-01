@@ -1,7 +1,8 @@
-header {
+#main-header {
   display: flex;
   height: 520px;
-  background-color: #89dfc0;
+  padding-top: 120px;
+  background-color: #b1eae3;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;

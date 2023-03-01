@@ -29,8 +29,6 @@ body {
 
  /* <main> container */
  .container {
-  display: flex;
-  flex-direction: row;
   width: 90%;
   background-color: #f4f1ec;
   margin: auto
