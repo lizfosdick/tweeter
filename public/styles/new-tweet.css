@@ -34,3 +34,7 @@ form textarea {
   border-bottom: 3px solid black;
   resize: none;
 }
+
+.red {
+  color: red;
+}
