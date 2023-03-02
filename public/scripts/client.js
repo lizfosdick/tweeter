@@ -8,6 +8,8 @@
 $(document).ready(function() {
   console.log("Document - clientjs - is ready");
 
+  $("#error").hide();
+
 //takes in a tweet object and returns a tweet <article> element
 const createTweetElement = function(tweet) {
   
@@ -82,12 +84,15 @@ const renderTweets = function(tweets) {
 
   $( "#tweet-form" ).submit(function( event ) {
     console.log("Handler for .submit() called")
+
+    
+
     event.preventDefault();
     if ($( "#tweet-text" ).val() === "") {
-      alert("Tweet cannot be empty!");
+      $("#error").text("⚠️Tweet cannot be empty.⚠️").slideDown('slow').delay(2500).slideUp('slow');
       return;
     } else if ($( "#tweet-text").val().length> 140) {
-        alert("Too many characters! Please shorten your tweet.");
+      $("#error").text("Too many characters! Please shorten your tweet.✏️").slideDown('slow').delay(2500).slideUp('slow');
         return;
       } else {
        // $.post( "/tweets", $( this ).serialize() );
