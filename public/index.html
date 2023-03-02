@@ -52,7 +52,7 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form action="/tweets/" method="POST">
+        <form id="tweet-form" method="POST">
           <label for="tweet-text">What are you humming about?</label>
           <textarea name="text" id="tweet-text"></textarea>
           <div>
@@ -60,27 +60,11 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
+
+
       </section>
       <p></p>
       <section id="all-tweets-container">
-        <!-- <article class="tweet">
-          <header>
-            <div class="left-header">
-              <img src="https://i.imgur.com/nlhLi3I.png">
-              <p>Lisa Vanderpump</p>
-            </div>
-            <div class="handle-text">@LisaVDP</div>
-          </header>
-            <div class="tweet-text">Throw me to the wolves and I shall return leading the pack. #RHOBH</div>
-            <footer>
-              <div>10 days ago</div>
-              <div class="footer-icons">
-                <i class="fa-solid fa-flag"></i>
-                <i class="fa-sharp fa-solid fa-retweet"></i>
-                <i class="fa-solid fa-heart"></i>
-            </div>
-            </footer>
-        </article> -->
       </section>
     </main>
   </body>
