@@ -6,7 +6,10 @@
 
 
 
+
 const createTweetElement = function(tweet) {
+  
+
   const $tweet = $("<article>").addClass("tweet");
   //header variables
   const $tweetHeader = $("<header>");
@@ -18,9 +21,10 @@ const createTweetElement = function(tweet) {
   //tweet text variables
   const $divTweetText = $("<div>").addClass("tweet-text").text(tweet.content.text);
 
+  const date = new Date(tweet.created_at)
   //tweet footer variables
   const $tweetFooter = $("<footer>");
-  const $divFooter = $("<div>").text(tweet.created_at);
+  const $divFooter = $("<div>").html(timeago.format(date));
   const $divFooterIcons = $("<div>").addClass("footer-icons");
   const $flagIcon = $("<i>").addClass("fa-flag").addClass("fa-solid");
   const $retweetIcon = $("<i>").addClass("fa-retweet").addClass("fa-solid").addClass("fa-sharp");
@@ -66,7 +70,16 @@ $(document).ready(function() {
   $( "#tweet-form" ).submit(function( event ) {
     console.log("Handler for .submit() called")
     event.preventDefault();
+    if ($( "#tweet-text" ).val() === "") {
+      alert("Tweet cannot be empty!");
+      return;
+    }
+    if ($( "#tweet-text").val().length> 140) {
+      alert("Too many characters! Please shorten your tweet.");
+      return;
+    }
     $.post( "/tweets", $( this ).serialize() );
+   
   })
 
   const loadTweets = () => {
