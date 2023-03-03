@@ -16,3 +16,12 @@ Tweeter is a simple, single-page Twitter clone. It was built during Lighthouse L
 - Node 5.10.x or above
 - Chance
 - Body Parser
+
+## Screenshots
+
+!["Screenshot of 1024px display"](https://github.com/lizfosdick/tweeter/blob/master/docs/1024-display-screenshot.png)
+!["Screenshot of responsive tablet display"](https://github.com/lizfosdick/tweeter/blob/master/docs/Responsive-tablet-display.png)
+!["Screenshot of new tweet form"](https://github.com/lizfosdick/tweeter/blob/master/docs/New-tweet-form.png)
+!["Screenshot of empty tweet error"](https://github.com/lizfosdick/tweeter/blob/master/docs/Empty-tweet-error.png)
+!["Screenshot of too many characters error"](https://github.com/lizfosdick/tweeter/blob/master/docs/Too-many-characters-error.png)
+
