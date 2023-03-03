@@ -55,3 +55,17 @@ form textarea {
   justify-content: center;
   padding: 10px;
 }
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet {
+    align-items: center;
+  }
+  
+  form {
+    width: 80%;
+  }
+
+  #error {
+    width: 80%;
+  }
+}

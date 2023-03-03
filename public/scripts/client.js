@@ -85,8 +85,6 @@ const renderTweets = function(tweets) {
   $( "#tweet-form" ).submit(function( event ) {
     console.log("Handler for .submit() called")
 
-    
-
     event.preventDefault();
     if ($( "#tweet-text" ).val() === "") {
       $("#error").text("⚠️Tweet cannot be empty.⚠️").slideDown('slow').delay(2500).slideUp('slow');

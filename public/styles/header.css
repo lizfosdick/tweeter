@@ -9,3 +9,15 @@
   width: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/climpek.png");;
 }
+
+@media only screen and (min-width: 1024px) {
+
+  #main-header {
+    width: 40%;
+    margin-top: 220px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+  }
+
+}

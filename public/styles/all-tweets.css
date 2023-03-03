@@ -56,3 +56,15 @@ footer {
 .footer-icons i:hover {
   color: #50437f;
 }
+
+@media only screen and (min-width: 1024px) {
+  .tweet {
+    width: 90%;
+   
+  }
+
+  #all-tweets-container {
+    margin-left: 100px;
+    margin-right: 10px;
+  }
+}
